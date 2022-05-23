@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.main-contain {
+    width: 600px;
+    margin: auto;
+}
+
+.title-bar {
+    height: 160px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.title-bar canvas {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    position: absolute;
+}
+
+.title-bar h1 {
+    position: absolute;
+    z-index: 1;
+    bottom: -8px;
+    color: white;
+    margin-left: 40px;
+}
+
+.title {
+    color: navy;
+    background-color: aliceblue;
+    border-bottom: 1px solid navy;
+    border-radius: 0px 40px 0px 0px;
+    margin-top: 20px;
+    padding: 10px 10px 2px 10px;
+}
+
+.versions ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.versions a {
+    color: dodgerblue;
+    text-decoration: none;
+    font-family: serif;
+}
+
+.versions a:hover {
+    text-decoration: underline;
+}
+
+.tent {
+    padding-top: 0px;
+    margin-bottom: 40px;
+}
+
+.tent p {
+    margin-top: 20px;
+    font-family: serif;
+}
+
+.tent a {
+    font-family: serif;
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.tent a:hover {
+    text-decoration: underline;
+}
+
+.tent a:visited {
+    font-family: serif;
+    color: dodgerblue;
+}
+
+.photo {
+    width: 380px;
+    margin: auto;
+    display: block;
+    margin-top: 20px;
+    border: 2px solid lightgray;
+}
+
+.photo img, .photo video {
+    width: 380px;
+    display: block;
+}
+
+.photo p {
+    font-family: Helvetica, Arial, sans-serif; 
+    background-color: lightgray;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 2px;
+    margin-top: 0px;
+}
+
+.footer {
+    font-size: 14px;
+    background-color: lemonchiffon;
+    color: goldenrod;
+    margin-bottom: 20px;
+    padding: 6px 10px 0px 10px;
+    height: initial;
+    border-bottom: 1px solid goldenrod;
+}
+
+.alignright {
+    float: right;
+}
+
+.footer a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}

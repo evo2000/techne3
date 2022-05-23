@@ -1,0 +1,60 @@
+.def {
+    border: 2px dotted navy;
+    color: navy;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.def h2 {
+    font-size: 18px;
+}
+
+.def h3 {
+    font-size: 16px;
+    font-style: italic;
+}
+
+.def p {
+    margin-top: 10px;
+}
+
+.bio {
+    margin-top: 20px;
+    height: 150px;
+}
+
+.bio img {
+    float: left;
+}
+
+.bio p {
+    margin-top: 0px;
+    width: 430px;
+    float: right;
+}
+
+.bio i {
+    font-family: serif;
+    font-weight: bold;
+}
+
+.tent a {
+    font-family: serif;
+    color: dodgerblue;
+    font-size: 16px;
+}
+
+.tent a:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px darkgrey;
+}
+
+.tent a:visited {
+    font-family: serif;
+    color: dodgerblue;
+    font-size: 16px;
+}
+
+.note img {
+    height: 1em;
+}
