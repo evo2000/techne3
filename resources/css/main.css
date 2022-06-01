@@ -58,6 +58,25 @@
     margin-bottom: 40px;
 }
 
+.flex-photos {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: lightgray;
+    display: flex;
+}
+
+.flex-photos img {
+    width: 140px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.flex-photos h4 {
+    font-size: 14px;
+    color: white;
+    font-style: italic;
+}
+
 .tent p {
     margin-top: 20px;
     font-family: serif;
@@ -76,30 +95,6 @@
 .tent a:visited {
     font-family: serif;
     color: dodgerblue;
-}
-
-.photo {
-    width: 380px;
-    margin: auto;
-    display: block;
-    margin-top: 20px;
-    border: 2px solid lightgray;
-}
-
-.photo img, .photo video {
-    width: 380px;
-    display: block;
-}
-
-.photo p {
-    font-family: Helvetica, Arial, sans-serif; 
-    background-color: lightgray;
-    color: white;
-    font-size: 12px;
-    font-weight: bold;
-    font-style: italic;
-    padding: 2px;
-    margin-top: 0px;
 }
 
 .footer {
