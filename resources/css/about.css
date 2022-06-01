@@ -46,7 +46,6 @@
 
 .tent a:hover {
     text-decoration: underline;
-    text-shadow: 1px 1px 3px darkgrey;
 }
 
 .tent a:visited {
