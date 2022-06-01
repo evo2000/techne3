@@ -83,6 +83,10 @@
     width: 70px;
 }
 
+.noshow {
+    visibility: hidden;
+}
+
 .tent p {
     margin-top: 20px;
     font-family: serif;
