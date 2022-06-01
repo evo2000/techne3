@@ -64,7 +64,6 @@
     background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .flex-photos img {
