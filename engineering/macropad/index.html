@@ -27,7 +27,7 @@
         <div class="main-contain">
 
             <a name="top"></a>
-            
+
             <div class="title-bar">
                 <script type="text/processing" src="/resources/processing/proc_point.pde"></script>
                 <canvas></canvas>
@@ -37,9 +37,8 @@
             <div class="navbar">
                 <a href="/">about</a>
                 <div class="dropdown">
-                    <button class="dropbtn">projects</button>
+                    <button class="dropbtn">engineering</button>
                     <div class="dropdown-content">
-                        <a href="/engineering/saturator2">saturator II <img src="/resources/icons/cu32.png"></a>
                         <a href="/engineering/theremin">theremin <img src="/resources/icons/cu32.png"></a>
                         <a href="/engineering/uart">uart</a>
                         <a href="/engineering/rat">rat <img src="/resources/icons/cu32.png"></a>
@@ -50,10 +49,44 @@
                         <a href="/engineering/odo">optical data overlay</a>
                     </div>
                 </div>
+                <div class="dropdown">
+                    <button class="dropbtn">other stuff</button>
+                    <div class="dropdown-content">
+                        <a href="#">t-shirts</a>
+                        <a href="#">photography</a>
+                        <a href="#">web design</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="title">
-                <h1>macropad v1</h1>
+            <div class="title" id="v2">
+                <h1>macropad</h1>
+                <div class="versions">
+                    <ul>
+                        <li><a href="#v2">&#8595; version 2</a></li>
+                        <li><a href="#v1">&#8595; version 1</a></li>
+                    </ul>
+                </div>
+                <h2>version 2</h2>
+                <h3>8.2016</h3>
+            </div>
+
+            <div class="tent">
+                <p>This work was completed as the final project for the BlueStamp Engineering summer program, my page on their website can be viewed <a href="https://projects.bluestampengineering.com/student-projects/evan-m/" target="_blank">here</a>.</p>
+                <div class="photo">
+                    <a href="mp2-1.jpg" data-lightbox="mp2" data-title="fig. 1"><img src="tn-mp2-1.png"></a>
+                    <p>fig. 1 - click on image to enlarge</p>
+                </div>
+                <p>The second version of the macropad project has many physical differences from the first. The microcontroller was changed from an Arduino Micro to a PJRC Teensy 3.2, the rubber membrane buttons were changed to mechanical keyboard switches, an SD card was added to store bitmap images for the keycaps, and a PCB was designed to streamline the connections made throughout the device.</p>
+                <div class="photo">
+                    <a href="mp2-2.jpg" data-lightbox="mp2" data-title="fig. 2"><img src="tn-mp2-2.png"></a>
+                    <p>fig. 2 - click on image to enlarge</p>
+                </div>
+                <p>This project was my first experience with PCB design, and though the result is not perfect, it was functional and easily fixable (a green breakout board for the microcontroller can be seen in fig. 1). This version improved on the first with the addition of the PCB and digital storage, but the reliability of the display/switch assembly suffered. I plan to design a new mechanism for the displays and switches, and to replace the individual high-gauge wires with a flexible cable to connect the displays to the PCB.</p>
+            </div>
+
+            <div class="title" id="v1">
+                <h2>version 1</h2>
                 <h3>2.2016</h3>
             </div>
 
