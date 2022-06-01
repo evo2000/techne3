@@ -31,11 +31,23 @@
 }
 
 .title {
-    color: navy;
-    background-color: aliceblue;
-    border-bottom: 1px solid navy;
+    color: midnightblue;
     margin-top: 20px;
-    padding: 10px 10px 2px 10px;
+    padding: 0px 0px 2px 0px;
+}
+
+.title h1 {
+    font-size: 20px;
+    font-style: italic;
+    background-color: midnightblue;
+    color: white;
+    padding: 0px 10px 0px 10px;
+    bottom: -2px;
+}
+
+.title h3 {
+    font-size: 16px;
+    padding: 0px 10px 2px 10px;
 }
 
 .versions ul {
