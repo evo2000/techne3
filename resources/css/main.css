@@ -71,7 +71,8 @@
 }
 
 .flex-photos img {
-    width: 160px;
+    border: 1px solid gray;
+    width: 158px;
     vertical-align: middle;
 }
 
