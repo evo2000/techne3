@@ -31,21 +31,25 @@
 }
 
 .title {
-    color: midnightblue;
+    color: grey;
     margin-top: 20px;
 }
 
 .title h1 {
+    font-size: 50px;
+    color: rgba(128, 128, 128, 0.1);
+    position: absolute;
+    z-index: -10;
+}
+
+.title h2 {
+    padding-top: 27px;
     font-size: 20px;
-    font-style: italic;
-    background-color: midnightblue;
-    color: white;
-    padding: 0px 10px 0px 10px;
 }
 
 .title h3 {
     font-size: 16px;
-    padding: 0px 10px 0px 10px;
+    color: yellowgreen;
 }
 
 .versions ul {
