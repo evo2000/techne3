@@ -33,7 +33,6 @@
 .title {
     color: midnightblue;
     margin-top: 20px;
-    padding: 0px 0px 2px 0px;
 }
 
 .title h1 {
@@ -42,12 +41,11 @@
     background-color: midnightblue;
     color: white;
     padding: 0px 10px 0px 10px;
-    bottom: -2px;
 }
 
 .title h3 {
     font-size: 16px;
-    padding: 0px 10px 2px 10px;
+    padding: 0px 10px 0px 10px;
 }
 
 .versions ul {
