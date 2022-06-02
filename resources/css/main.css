@@ -121,6 +121,21 @@
     color: dodgerblue;
 }
 
+.sources {
+    margin-bottom: 40px;
+}
+
+.sources h1 {
+    color: gray;
+    font-size: 16px;
+}
+
+.sources p {
+    background-color: rgba(128, 128, 128, 0.1);
+    padding: 10px;
+    font-family: serif;
+}
+
 .footer {
     font-size: 14px;
     background-color: lemonchiffon;
