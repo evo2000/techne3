@@ -54,26 +54,25 @@
             </div>
 
             <div class="title">
-                <h1>optical data overlay</h1>
+                <div class="baseline">
+                    <h1>optical data overlay</h1>
+                    <h2>optical data overlay</h2>
+                    <div class="baseline-dummy"></div>
+                </div>
                 <h3>2.2015</h3>
             </div>
 
             <div class="tent">
-                <p>The optical data overlay is a project I created for a high school science fair. I have always been interested in optics, and was inspired to combine this interest with electronics. Virtual and augmented reality devices were a large source of inspiration for this project, their exclusivity only made the idea of a homemade platform more exciting.</p>
-                <div class="photo">
+                <div class="flex-photos">
                     <a href="odo1.jpg" data-lightbox="odo" data-title="fig. 1"><img src="tn-odo1.png"></a>
-                    <p>fig. 1 - click on image to enlarge</p>
-                </div>
-                <p>There is a small OLED display pointing into the cardboard construction (visible in fig. 3). Inside the cardboard tube seen in fig. 1, a half-silvered mirror is situated at a 45° angle from both the display and the line of sight through the device. The half-silvered mirror, or “beamsplitter,” reflects light from the display and transmits light through the tube - the result is a combination of the two images.</p>
-                <div class="photo">
                     <a href="odo2.jpg" data-lightbox="odo" data-title="fig. 2"><img src="tn-odo2.png"></a>
-                    <p>fig. 2 - click on image to enlarge</p>
-                </div>
-                <p>Fig. 2 is an image from the user’s point of view. In this setup, a magneto sensor is connected to the microcontroller, which displays the magnetic compass heading in the top left of the viewport as well as a reticle in the middle.</p>
-                <div class="photo">
                     <a href="odo3.jpg" data-lightbox="odo" data-title="fig. 3"><img src="tn-odo3.png"></a>
-                    <p>fig. 3 - click on image to enlarge</p>
+                    <h4>Click on images to enlarge.</h4>
                 </div>
+
+                <p>The optical data overlay is a project I created for a high school science fair. I have always been interested in optics, and was inspired to combine this interest with electronics. Virtual and augmented reality devices were a large source of inspiration for this project, their exclusivity only made the idea of a homemade platform more exciting.</p>
+                <p>There is a small OLED display pointing into the cardboard construction (visible in fig. 3). Inside the cardboard tube seen in fig. 1, a half-silvered mirror is situated at a 45° angle from both the display and the line of sight through the device. The half-silvered mirror, or “beamsplitter,” reflects light from the display and transmits light through the tube - the result is a combination of the two images.</p>
+                <p>Fig. 2 is an image from the user’s point of view. In this setup, a magneto sensor is connected to the microcontroller, which displays the magnetic compass heading in the top left of the viewport as well as a reticle in the middle.</p>
                 <p>The driver board for the display is visible in fig. 3, on the bottom of the assembly. Both the magneto sensor and display are connected to an Arduino UNO, which handles the data input, output, and heading computations.</p>
                 <p>Because the image from the display is being reflected onto the view of the user, it appeared 'flipped', or mirrored. To remedy this, I edited the main file of the Arduino library which was being used to write to the display, essentially reversing the pixel values on the x and y axes on the display to create a 'flipped' image on the screen. When this image is reflected inside the tube, it appears 'unflipped' to the user.</p>
             </div>
