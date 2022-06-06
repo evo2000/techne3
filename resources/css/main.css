@@ -82,18 +82,18 @@
     color: yellowgreen;
 }
 
-.versions ul {
+.links ul {
     list-style: none;
     padding: 10px;
 }
 
-.versions a {
+.links a {
     color: dodgerblue;
     text-decoration: none;
     font-family: serif;
 }
 
-.versions a:hover {
+.links a:hover {
     text-decoration: underline;
 }
 
