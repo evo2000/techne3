@@ -93,7 +93,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .title-bar {
     height: 160px;
-    margin-top: 20px;
+    padding-top: 20px;
     position: relative;
 }
 
@@ -249,12 +249,12 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .footer {
     font-size: 14px;
-    background-color: lemonchiffon;
-    color: goldenrod;
-    margin-bottom: 20px;
+    background-color: black;
+    color: white;
     padding: 6px 10px 0px 10px;
     height: initial;
-    border-bottom: 1px solid goldenrod;
+    border-bottom: 1px solid white;
+    border-top: 1px solid white;
 }
 
 .alignright {
@@ -262,16 +262,23 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .footer a {
-    color: goldenrod;
+    color: white;
     text-decoration: none;
 }
 
 .footer a:visited {
-    color: goldenrod;
+    color: white;
     text-decoration: none;
 }
 
 .footer a:hover {
     color: yellowgreen;
     text-decoration: none;
+}
+
+.footer-space {
+    margin: 0px;
+    padding: 0px;
+    height: 40px;
+    background-color: black;
 }
