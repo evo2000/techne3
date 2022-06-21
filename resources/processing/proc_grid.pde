@@ -1,8 +1,8 @@
 int spacer;
 
 void setup(){
-  size(600, 160);
-  spacer = 16; //dist between grid pts
+  size(601, 161);
+  spacer = 10; //dist between grid pts
 }
 
 void draw(){
@@ -11,8 +11,8 @@ void draw(){
   for(int x = 0; x <= width; x += spacer){
     for(int y = 0; y <= height; y += spacer){
       point(x, y);
-      float dist = min(100, dist(x, y, mouseX, mouseY));
-      float mag = map(dist, 0, 100, spacer/2, 0);
+      float distance = min(100, dist(x, y, mouseX, mouseY));
+      float mag = map(distance, 0, 100, spacer/2, 0);
       line(x - mag, y, x + mag, y);
       line(x, y - mag, x, y + mag);
     }
