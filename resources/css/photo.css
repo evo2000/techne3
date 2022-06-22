@@ -59,7 +59,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     text-align: left;
     border-bottom: 1px solid white;
 }
-  
+
 .dropdown-content a:hover {
     color: gray;
 }
@@ -107,9 +107,15 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 .title-bar h1 {
     position: absolute;
     z-index: 1;
-    bottom: -8px;
+    vertical-align: baseline;
     color: white;
     margin-left: 40px;
+}
+
+.title-bar h1::after {
+    content: "";
+    display: inline-block;
+    height: 161px;
 }
 
 .title {

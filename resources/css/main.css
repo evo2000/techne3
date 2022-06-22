@@ -49,7 +49,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     background-color: lemonchiffon;
     z-index: 1;
 }
-  
+
 .dropdown-content a {
     float: none;
     color: goldenrod;
