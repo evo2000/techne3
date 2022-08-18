@@ -1,0 +1,87 @@
+<!doctype html>
+
+<!--
+
+   __            __                            ___          
+  / /____  _____/ /_  ____  ___   ____  ____  / (_)___  ___ 
+ / __/ _ \/ ___/ __ \/ __ \/ _ \ / __ \/ __ \/ / / __ \/ _ \
+/ /_/  __/ /__/ / / / / / /  __// /_/ / / / / / / / / /  __/
+\__/\___/\___/_/ /_/_/ /_/\___(_)____/_/ /_/_/_/_/ /_/\___/ 
+
+-->
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>techne.</title>
+        <script src="/resources/processing/processing.js"></script>
+        <link rel="stylesheet" href="/resources/css/main.css">
+        <link rel="stylesheet" href="/resources/css/dropdown.css">
+        <link rel="icon" type="image/png" href="/resources/icons/fav32.png">
+        <link href="/resources/lightbox2/lightbox.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <div class="main-contain">
+
+            <a name="top"></a>
+            
+            <div class="title-bar">
+                <script type="text/processing" src="/resources/processing/proc_point.pde"></script>
+                <canvas></canvas>
+                <h1>techne.</h1>
+            </div>
+
+            <div class="navbar">
+                <a href="/">about</a>
+                <div class="dropdown">
+                    <button class="dropbtn">projects</button>
+                    <div class="dropdown-content">
+                        <a href="/engineering/mammut">mammut</a>
+                        <a href="/engineering/saturator2">saturator II <img src="/resources/icons/cu32.png"></a>
+                        <a href="/engineering/theremin">theremin <img src="/resources/icons/cu32.png"></a>
+                        <a href="/engineering/uart">uart</a>
+                        <a href="/engineering/rat">rat <img src="/resources/icons/cu32.png"></a>
+                        <a href="/engineering/dld">digital logic design <img src="/resources/icons/cu32.png"></a>
+                        <a href="/engineering/quadcopter">quadcopter</a>
+                        <a href="/engineering/macropad2">macropad v2</a>
+                        <a href="/engineering/macropad1">macropad v1</a>
+                        <a href="/engineering/odo">optical data overlay</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="title">
+                <div class="baseline">
+                    <h1>macropad v1</h1>
+                    <h2>macropad v1</h2>
+                    <div class="baseline-dummy"></div>
+                </div>
+                <h3>2.2016</h3>
+            </div>
+
+            <div class="tent">
+                <div class="flex-photos">
+                    <a href="mp1-1.jpg" data-lightbox="mp1" data-title="fig. 1"><img src="tn-mp1-1.png"></a>
+                    <a href="mp1-2.jpg" data-lightbox="mp1" data-title="fig. 2"><img src="tn-mp1-2.png"></a>
+                    <a><img class="noshow"></a>
+                    <h4>Click on images to enlarge.</h4>
+                </div>
+
+                <p>I built the first iteration of the macropad project for a science fair in high school. The idea was to combine the dynamic interface design of touch displays with the positive tactility of traditional keyboard switches. This was accomplished by integrating small OLED displays into the top of each of the nine buttons on the macropad.</p>
+                <p>The device consists of two boards: the bottom board contains a microcontroller, 16 channel multiplexer, and logic level shifters. The top board breaks out the SPI bus and switch signals, with all signals routed through the ribbon cable connector. This connector makes disassembly and repair more convenient.</p>
+                <p>Fig. 2 Shows the wiring in layers on the two boards, and gives a general sense of the layout of the device.</p>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2015 - 2022<a class="alignright" href="#top">^ back to top</a></p>
+            </div>
+
+        </div>
+        
+        <script src="/resources/lightbox2/lightbox-plus-jquery.js"></script>
+    </body>
+    
+</html>
