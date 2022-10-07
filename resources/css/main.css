@@ -134,36 +134,19 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     z-index: 1;
 }
 
-.title h1 {
-    width: 600px;
-    white-space: nowrap;
-    font-size: 50px;
-    color: whitesmoke;
-    position: absolute;
-    line-height: 0px;
+.title {
+    border-bottom: 1px solid lightgray;
 }
 
-.title h1::after {
-    content: "";
-    display: inline-block;
-    height: 50px;
+.title h1 {
+    font-size: 16px;
+    color: red;
 }
 
 .title h2 {
-    font-size: 20px;
-    position: absolute;
-    line-height: 0px;
-}
-
-.title h2::after {
-    content: "";
-    display: inline-block;
-    height: 50px;
-}
-
-.title h3 {
     font-size: 16px;
-    color: yellowgreen;
+    color: lightgray;
+    padding-top: 4px;
 }
 
 .versions ul {
@@ -189,9 +172,9 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 .flex-photos {
     margin-top: 20px;
     padding: 10px 10px 0px 10px;
-    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
+    border: 1px solid lightgray;
 }
 
 .flex-photos a {
@@ -199,16 +182,16 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .flex-photos img {
-    border: 1px solid white;
+    border: 1px solid lightgray;
     width: 158px;
     vertical-align: middle;
 }
 
 .flex-photos h4 {
     font-size: 14px;
-    color: white;
+    color: lightgray;
     font-style: italic;
-    width: 70px;
+    width: 68px;
 }
 
 .noshow {
