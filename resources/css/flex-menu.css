@@ -26,9 +26,19 @@
     font-size: 16px;
     color: lightgray;
     display: inline-block;
+    width: 180px;
 }
 
 .flex-element h2 img {
     height: 1em;
     float: right;
+}
+
+.note p {
+    font-family: serif;
+    padding-bottom: 30px;
+}
+
+.note img {
+    height: 1em;
 }
