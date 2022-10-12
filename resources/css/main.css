@@ -157,7 +157,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 .versions a {
     color: dodgerblue;
     text-decoration: none;
-    font-family: serif;
+    font-family: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 }
 
 .versions a:hover {
@@ -198,13 +198,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .tent p {
     margin-top: 20px;
-    font-family: serif;
+    font-family: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 }
 
 .tent a {
-    font-family: serif;
     color: dodgerblue;
     text-decoration: none;
+    font-family: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 }
 
 .tent a:hover {
@@ -212,8 +212,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .tent a:visited {
-    font-family: serif;
     color: dodgerblue;
+    font-family: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 }
 
 .sources {
@@ -228,7 +228,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .sources p {
     padding: 10px;
-    font-family: serif;
+    font-family: 'TimesNewRoman', 'Times New Roman', 'Times', 'Baskerville', 'Georgia', serif;
 }
 
 .footer {
