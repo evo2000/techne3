@@ -106,12 +106,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     vertical-align: baseline;
     color: white;
     margin-left: 40px;
+    margin-top: 130px;
 }
 
 .title-bar h1::after {
     content: "";
     display: inline-block;
-    height: 160px;
+    height: 30px;
 }
 
 .title {
