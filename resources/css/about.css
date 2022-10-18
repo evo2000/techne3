@@ -36,12 +36,12 @@
 }
 
 .bio i {
-    font-family: serif;
+    font-family: 'FreeSerif', serif;
     font-weight: bold;
 }
 
 .tent a {
-    font-family: serif;
+    font-family: 'FreeSerif', serif;
     color: dodgerblue;
     font-size: 16px;
 }
@@ -51,7 +51,7 @@
 }
 
 .tent a:visited {
-    font-family: serif;
+    font-family: 'FreeSerif', serif;
     color: dodgerblue;
     font-size: 16px;
 }

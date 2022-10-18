@@ -79,7 +79,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
 
 .main-contain {
@@ -134,36 +134,19 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     z-index: 1;
 }
 
-.title h1 {
-    width: 600px;
-    white-space: nowrap;
-    font-size: 50px;
-    color: whitesmoke;
-    position: absolute;
-    line-height: 0px;
+.title {
+    border-bottom: 1px solid lightgray;
 }
 
-.title h1::after {
-    content: "";
-    display: inline-block;
-    height: 50px;
+.title h1 {
+    font-size: 16px;
+    color: red;
 }
 
 .title h2 {
-    font-size: 20px;
-    position: absolute;
-    line-height: 0px;
-}
-
-.title h2::after {
-    content: "";
-    display: inline-block;
-    height: 50px;
-}
-
-.title h3 {
     font-size: 16px;
-    color: yellowgreen;
+    color: lightgray;
+    padding-top: 4px;
 }
 
 .versions ul {
@@ -174,7 +157,7 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 .versions a {
     color: dodgerblue;
     text-decoration: none;
-    font-family: serif;
+    font-family: 'FreeSerif', serif;
 }
 
 .versions a:hover {
@@ -182,16 +165,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .tent {
-    padding-top: 0px;
     margin-bottom: 40px;
 }
 
 .flex-photos {
-    margin-top: 20px;
-    padding: 10px 10px 0px 10px;
-    background-color: lightgray;
+    margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
 }
 
 .flex-photos a {
@@ -199,16 +180,16 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .flex-photos img {
-    border: 1px solid white;
-    width: 158px;
+    border: 1px solid lightgray;
+    width: 166px;
     vertical-align: middle;
 }
 
 .flex-photos h4 {
     font-size: 14px;
-    color: white;
+    color: lightgray;
     font-style: italic;
-    width: 70px;
+    width: 66px;
 }
 
 .noshow {
@@ -217,13 +198,13 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .tent p {
     margin-top: 20px;
-    font-family: serif;
+    font-family: 'FreeSerif', serif;
 }
 
 .tent a {
-    font-family: serif;
     color: dodgerblue;
     text-decoration: none;
+    font-family: 'FreeSerif', serif;
 }
 
 .tent a:hover {
@@ -231,8 +212,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .tent a:visited {
-    font-family: serif;
     color: dodgerblue;
+    font-family: 'FreeSerif', serif;
 }
 
 .sources {
@@ -240,14 +221,14 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 }
 
 .sources h1 {
-    color: gray;
+    color: lightgray;
     font-size: 16px;
+    border-bottom: 1px solid lightgray;
 }
 
 .sources p {
-    background-color: rgba(128, 128, 128, 0.1);
     padding: 10px;
-    font-family: serif;
+    font-family: 'FreeSerif', serif;
 }
 
 .footer {
