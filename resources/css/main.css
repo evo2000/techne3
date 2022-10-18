@@ -4,6 +4,14 @@
     font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
 
+p,a,i {
+    font-family: 'FreeSerif', serif;
+}
+
+.navbar a, .footer p, .footer a {
+    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
+}
+
 .navbar {
     overflow: hidden;
     background-color: lemonchiffon;
@@ -91,21 +99,6 @@
     padding-top: 4px;
 }
 
-.versions ul {
-    list-style: none;
-    padding: 10px;
-}
-
-.versions a {
-    color: dodgerblue;
-    text-decoration: none;
-    font-family: 'FreeSerif', serif;
-}
-
-.versions a:hover {
-    text-decoration: underline;
-}
-
 .tent {
     margin-bottom: 40px;
 }
@@ -140,13 +133,11 @@
 
 .tent p {
     margin-top: 20px;
-    font-family: 'FreeSerif', serif;
 }
 
 .tent a {
     color: dodgerblue;
     text-decoration: none;
-    font-family: 'FreeSerif', serif;
 }
 
 .tent a:hover {
@@ -155,7 +146,6 @@
 
 .tent a:visited {
     color: dodgerblue;
-    font-family: 'FreeSerif', serif;
 }
 
 .sources {
@@ -170,7 +160,6 @@
 
 .sources p {
     padding: 10px;
-    font-family: 'FreeSerif', serif;
 }
 
 .footer {

@@ -34,14 +34,11 @@
 }
 
 .bio i {
-    font-family: 'FreeSerif', serif;
     font-weight: bold;
 }
 
 .tent a {
-    font-family: 'FreeSerif', serif;
     color: dodgerblue;
-    font-size: 16px;
 }
 
 .tent a:hover {
@@ -49,7 +46,6 @@
 }
 
 .tent a:visited {
-    font-family: 'FreeSerif', serif;
     color: dodgerblue;
     font-size: 16px;
 }
