@@ -1,10 +1,16 @@
-/*
----------- dropdown styles ----------
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
+}
 
-example from:
-https://www.w3schools.com/howto/howto_css_dropdown.asp
-https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
-*/
+p,a,i {
+    font-family: 'FreeSerif', serif;
+}
+
+.navbar a, .footer p, .footer a {
+    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
+}
 
 .navbar {
     overflow: hidden;
@@ -22,64 +28,8 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     font-size: 14px;
 }
   
-.dropdown {
-    float: left;
-    overflow: hidden;
-    font-size: 14px;
-}
-  
-.dropdown .dropbtn {
-    font-size: 14px;
-    border: none;
-    color: goldenrod;
-    background-color: inherit;
-    font-family: inherit;
-    padding-left: 10px;
-}
-  
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover {
     color: yellowgreen;
-}
-  
-.dropdown-content {
-    border-top: 1px solid goldenrod;
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    background-color: lemonchiffon;
-    z-index: 1;
-}
-  
-.dropdown-content a {
-    float: none;
-    color: goldenrod;
-    padding-top: 6px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-    border-bottom: 1px solid goldenrod;
-}
-  
-.dropdown-content a:hover {
-    color: yellowgreen;
-}
-
-.dropdown-content img {
-    height: 1em;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-/*
----------- main styles ----------
-*/
-
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
 
 .main-contain {
@@ -103,7 +53,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 .title-bar h1 {
     position: absolute;
     z-index: 1;
-    vertical-align: baseline;
     color: white;
     margin-left: 40px;
     margin-top: 130px;
@@ -150,21 +99,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
     padding-top: 4px;
 }
 
-.versions ul {
-    list-style: none;
-    padding: 10px;
-}
-
-.versions a {
-    color: dodgerblue;
-    text-decoration: none;
-    font-family: 'FreeSerif', serif;
-}
-
-.versions a:hover {
-    text-decoration: underline;
-}
-
 .tent {
     margin-bottom: 40px;
 }
@@ -199,13 +133,11 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .tent p {
     margin-top: 20px;
-    font-family: 'FreeSerif', serif;
 }
 
 .tent a {
     color: dodgerblue;
     text-decoration: none;
-    font-family: 'FreeSerif', serif;
 }
 
 .tent a:hover {
@@ -214,7 +146,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .tent a:visited {
     color: dodgerblue;
-    font-family: 'FreeSerif', serif;
 }
 
 .sources {
@@ -229,7 +160,6 @@ https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropdown_navbar
 
 .sources p {
     padding: 10px;
-    font-family: 'FreeSerif', serif;
 }
 
 .footer {
