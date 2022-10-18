@@ -1,0 +1,44 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+.flex-element {
+    border-bottom: 1px solid lightgray;
+}
+
+.flex-element a img {
+    height: 180px;
+    width: 180px;
+    margin-top: 30px;
+}
+
+.flex-element h1 {
+    padding-top: 4px;
+    font-size: 16px;
+    color: red;
+}
+
+.flex-element h2 {
+    padding-top: 4px;
+    font-size: 16px;
+    color: lightgray;
+    display: inline-block;
+    width: 180px;
+}
+
+.flex-element h2 img {
+    height: 1em;
+    float: right;
+}
+
+.note p {
+    font-family: 'FreeSerif', serif;
+    padding-bottom: 30px;
+}
+
+.note img {
+    height: 1em;
+}
