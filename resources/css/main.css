@@ -148,20 +148,6 @@ p,a,i {
     color: dodgerblue;
 }
 
-.sources {
-    margin-bottom: 40px;
-}
-
-.sources h1 {
-    color: lightgray;
-    font-size: 16px;
-    border-bottom: 1px solid lightgray;
-}
-
-.sources p {
-    padding: 10px;
-}
-
 .footer {
     font-size: 14px;
     background-color: lemonchiffon;
