@@ -8,6 +8,10 @@ p,a,i {
     font-family: 'FreeSerif', serif;
 }
 
+body {
+    background-color: lightgray;
+}
+
 .navbar a, .footer p, .footer a {
     font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
@@ -35,11 +39,13 @@ p,a,i {
 .main-contain {
     width: 600px;
     margin: auto;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: white;
 }
 
 .title-bar {
     height: 160px;
-    margin-top: 20px;
     position: relative;
 }
 
@@ -152,7 +158,6 @@ p,a,i {
     font-size: 14px;
     background-color: lemonchiffon;
     color: goldenrod;
-    margin-bottom: 20px;
     padding: 6px 10px 0px 10px;
     height: initial;
     border-bottom: 1px solid goldenrod;
