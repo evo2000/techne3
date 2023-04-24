@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.main-contain {
+    width: 600px;
+    margin: auto;
+}
+
+.title-bar {
+    margin: 80px 0px 20px 0px;
+}
+
+.title-bar h1 {
+    color: lightgray;
+    font-size: 80px;
+    font-weight: 400;
+}
+
+.title-bar h2 {
+    padding-top: 10px;
+    color: lightgray;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: lightgray;
+    padding: 6px 10px 0px 10px;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-decoration: none;
+    padding-right: 10px;
+    font-size: 14px;
+}
+  
+.navbar a:hover {
+    color: darkgray;
+}
+
+.tent {
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.tent p {
+    font-size: 16px;
+    font-weight: 400;
+    color: lightgray;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+
+.tent a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.tent a:hover {
+    text-decoration: underline;
+}
+
+.tent a:visited {
+    color: dodgerblue;
+}
+
+.tent img {
+    width: 600px;
+}
+
+.footer {
+    font-size: 14px;
+    background-color: lightgray;
+    color: white;
+    margin-bottom: 40px;
+    padding: 6px 10px 0px 10px;
+    height: initial;
+}
+
+.alignright {
+    float: right;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: darkgray;
+    text-decoration: none;
+}
