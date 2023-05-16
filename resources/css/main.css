@@ -84,6 +84,47 @@ p,a,i {
     z-index: 1;
 }
 
+.spec h1 {
+    padding-top: 20px;
+    font-size: 20px;
+    color: lightblue;
+    position: absolute;
+}
+
+.spec h1::after {
+    content: "";
+    display: inline-block;
+    height: 0px;
+}
+
+.baseline {
+    height: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.baseline-dummy {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    height: 0px;
+    width: 600px;
+}
+
+.spec-contain {
+    background-color:lightcyan;
+    display: flex;
+}
+
+.spec-contain img {
+    padding: 20px;
+    width: 180px;
+}
+
+.spec-contain p {
+    padding: 20px 20px 20px 0px;
+}
+
 .title {
     border-bottom: 1px solid lightgray;
 }
