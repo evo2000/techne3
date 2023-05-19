@@ -61,7 +61,7 @@ p,a,i {
 .title-bar h1::after {
     content: "";
     display: inline-block;
-    height: 30px;
+    height:30px;
 }
 
 .title {
@@ -69,59 +69,31 @@ p,a,i {
     margin-top: 20px;
 }
 
-.baseline {
-    height: 60px;
-    position: relative;
-    overflow: hidden;
-}
-
-.baseline-dummy {
-    position: absolute;
-    left: 0px;
-    top: 50px;
-    height: 0px;
-    width: 600px;
-    z-index: 1;
-}
-
-.spec h1 {
-    padding-top: 20px;
+.spec-title h1 {
+    margin-top: 0px;
     font-size: 20px;
-    color: lightblue;
+    color: steelblue;
     position: absolute;
 }
 
-.spec h1::after {
+.spec-title h1::after {
     content: "";
     display: inline-block;
-    height: 0px;
+    height: 40px;
 }
 
-.baseline {
-    height: 20px;
-    position: relative;
-    overflow: hidden;
-}
-
-.baseline-dummy {
-    position: absolute;
-    left: 0px;
-    top: 50px;
-    height: 0px;
-    width: 600px;
-}
-
-.spec-contain {
-    background-color:lightcyan;
+.spec-tent {
+    margin-top: 40px;
+    background-color: lightblue;
     display: flex;
 }
 
-.spec-contain img {
+.spec-tent img {
     padding: 20px;
     width: 180px;
 }
 
-.spec-contain p {
+.spec-tent p {
     padding: 20px 20px 20px 0px;
 }
 
