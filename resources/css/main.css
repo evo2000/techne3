@@ -89,8 +89,11 @@ p,a,i {
     border-bottom: 1px solid lightskyblue;
 }
 
+.spec-tent a {
+    margin: 20px;
+}
+
 .spec-tent img {
-    padding: 20px;
     width: 180px;
 }
 
