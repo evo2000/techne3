@@ -4,7 +4,7 @@
     font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
 
-p,a,i {
+p,a,i,ul,li {
     font-family: 'FreeSerif', serif;
 }
 
@@ -133,6 +133,10 @@ p,a,i {
 
 .tent p {
     margin-top: 20px;
+}
+
+.tent ul {
+    margin-left: 40px;
 }
 
 .tent a {

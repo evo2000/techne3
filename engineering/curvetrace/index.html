@@ -55,12 +55,19 @@
                     <a href="imgs/LCp.jpeg" data-lightbox="induction" data-title="Resonant LC load"><img src="imgs/LCp.jpeg"></a>
                 </div>
 
-                <p>Abstract: A single-mug induction heater was designed, simulated, and constructed using common electronic components and DC power supplies. The heater creates an alternating magnetic field in the vicinity of the target mug, which is transformed into thermal energy by eddy currents in a high-permeability material placed inside the mug. The heater utilizes zero-current switching and a dual-resonant load design, allowing for high currents to flow through the heating coil, with low power consumption during operation.</p>
-                <p>
-                    Related links:
-                    <br><a href="https://github.com/evo2000/induction-heater" target="_blank">GitHub</a>
-                    <br><a href="report.pdf" target="_blank">Project report</a>
-                    <br><a href="presentation.pdf" target="_blank">Project presentation</a>
+                <p>This circuit is a semiconductor test device which plots the I-V characteristics of the DUT. At the moment, it supports small signal diodes and BJTs, and may be expanded to support FETs and high-voltage devices in the near future. It generates two signals: a step current applied to the base terminal, and a ramp voltage applied to the collector terminal. The output is a voltage proportional to the resulting emitter current, which displays the desired I-V curves when viewed with respect to the collector voltage - this can be readily done by using the X-Y acquisition mode on an oscilloscope.</p>
+
+                <p>The curve tracer has many uses in practical circuit design:
+                    <ul>
+                        <li>Transistor matching</li>
+                        <li>Measurement of:
+                        <ul>
+                            <li>DC current gain</li>
+                            <li>Base-emitter saturation voltage</li>
+                            <li>Forward voltage</li>
+                        </ul>
+                        </li>
+                    </ul>
                 </p>
             </div>
 
