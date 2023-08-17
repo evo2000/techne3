@@ -1,0 +1,87 @@
+<!doctype html>
+
+<!--
+
+   __            __                            ___          
+  / /____  _____/ /_  ____  ___   ____  ____  / (_)___  ___ 
+ / __/ _ \/ ___/ __ \/ __ \/ _ \ / __ \/ __ \/ / / __ \/ _ \
+/ /_/  __/ /__/ / / / / / /  __// /_/ / / / / / / / / /  __/
+\__/\___/\___/_/ /_/_/ /_/\___(_)____/_/ /_/_/_/_/ /_/\___/ 
+
+-->
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>techne.</title>
+        <script src="/resources/processing/processing.js"></script>
+        <link rel="stylesheet" href="/resources/css/main.css">
+        <link rel="stylesheet" href="/resources/css/dropdown.css">
+        <link rel="icon" type="image/png" href="/resources/icons/fav32.png">
+        <link href="/resources/lightbox2/lightbox.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <div class="main-contain">
+
+            <a name="top"></a>
+            
+            <div class="title-bar">
+                <script type="text/processing" src="/resources/processing/proc_point.pde"></script>
+                <canvas></canvas>
+                <h1>techne.</h1>
+            </div>
+
+            <div class="navbar">
+                <a href="/about/">about</a>
+                <a href="/engineering">engineering</a>
+            </div>
+
+            <div class="title">
+                <h1>i-v curve tracer</h1>
+                <h2>7.2023</h2>
+            </div>
+
+            <div class="tent">
+                <div class="flex-photos">
+                    <a href="imgs/2n3904_lv.jpeg" data-lightbox="curvetrace" data-title="DUT: 2N3904, max C-E voltage = ~1.8V"><img src="imgs/2n3904_lv.jpeg"></a>
+                    <a href="imgs/2n3904_hv.jpeg" data-lightbox="curvetrace" data-title="DUT: 2N3904, max C-E voltage = ~8V"><img src="imgs/2n3904_hv.jpeg"></a>
+                    <a href="imgs/1n4148.jpeg" data-lightbox="curvetrace" data-title="DUT: 1N4148"><img src="imgs/1n4148.jpeg"></a>
+                    <h4>Click on images to enlarge.</h4>
+                    <a href="imgs/bboard.jpeg" data-lightbox="curvetrace" data-title="Breadboarded circuit"><img src="imgs/bboard.jpeg"></a>
+                </div>
+
+                <p>This circuit is a semiconductor test device which plots the I-V characteristics of the DUT. At the moment, it supports small signal diodes and BJTs, and may be expanded to support FETs and high-voltage devices in the near future. It generates two signals: a step current applied to the base terminal, and a ramp voltage applied to the collector terminal. The output is a voltage proportional to the resulting emitter current, which displays the desired I-V curves when viewed with respect to the collector voltage - this can be readily done by using the X-Y acquisition mode on an oscilloscope.</p>
+
+                <p>The curve tracer has many practical uses in circuit design:
+                    <ul>
+                        <li>Transistor matching</li>
+                        <li>Measurement of:
+                        <ul>
+                            <li>DC current gain</li>
+                            <li>Base-emitter saturation voltage</li>
+                            <li>Forward voltage</li>
+                        </ul>
+                        </li>
+                    </ul>
+                </p>
+
+                <p>
+                    Related links:
+                    <br><a href="curvetrace.pdf" target="_blank">&#187; Schematic [pdf]</a>
+                    <br><a href="https://github.com/evo2000/curvetrace" target="_blank">&#187; GitHub [link]</a>
+                </p>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2015 - 2022<a class="alignright" href="#top">^ back to top</a></p>
+            </div>
+
+        </div>
+        
+        <script src="/resources/lightbox2/lightbox-plus-jquery.js"></script>
+    </body>
+    
+</html>
