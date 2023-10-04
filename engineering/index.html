@@ -43,18 +43,9 @@
 
             <div class="filterbar">
                 <h3>filter projects:</h3>
-                <button onclick="
-                    document.getElementsByClassName('personal').style.display = 'inline'
-                    document.getElementsByClassName('school').style.display = 'inline'
-                ">all projects</button>
-                <button onclick="
-                    document.getElementsByClassName('personal').style.display = 'inline'
-                    document.getElementsByClassName('school').style.display = 'none'
-                ">personal projects</button>
-                <button onclick="
-                    document.getElementsByClassName('personal').style.display = 'none'
-                    document.getElementsByClassName('school').style.display = 'inline'
-                ">school projects</button>
+                <button class="filter-button" onclick="filter_all()">all projects</button>
+                <button class="filter-button" onclick="filter_personal()">personal projects</button>
+                <button class="filter-button" onclick="filter_school()">school projects</button>
             </div>
 
             <div class="flex-container">
