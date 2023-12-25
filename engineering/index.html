@@ -16,6 +16,7 @@
         <meta charset="utf-8">
         <title>techne.</title>
         <script src="/resources/processing/processing.js"></script>
+        <script src="/resources/js/project_filter.js"></script>
         <link rel="stylesheet" href="/resources/css/main.css">
         <link rel="stylesheet" href="/resources/css/dropdown.css">
         <link rel="stylesheet" href="/resources/css/flex-menu.css">
@@ -40,68 +41,77 @@
                 <a href="/engineering">engineering</a>
             </div>
 
+            <div class="spec-title filtertitle">
+                <h1>filter</h1>
+            </div>
+            <div class="spec-tent filterbar">
+                <button class="filter-button" onclick="filter_all()">all projects</button>
+                <button class="filter-button" onclick="filter_personal()">personal projects</button>
+                <button class="filter-button" onclick="filter_school()">school projects</button>
+            </div>
+
             <div class="flex-container">
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/curvetrace"><img src="imgs/curvetrace.png"></a>
                     <h1>i-v curve tracer</h1>
                     <h2>7.2023</h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element school">
                     <a href="/engineering/induction-heat"><img src="imgs/induction.jpeg"></a>
                     <h1>induction heater</h1>
                     <h2>5.2023 <img src="/resources/icons/cu.png"></h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element school">
                     <a href="/engineering/rffe/"><img src="imgs/rffe.png"></a>
                     <h1>partial rf front-end</h1>
                     <h2>12.2022 <img src="/resources/icons/cu.png"></h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/mammut/"><img src="imgs/mammut.jpg"></a>
                     <h1>mammut</h1>
                     <h2>6.2022</h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element school">
                     <a href="/engineering/saturator2/"><img src="imgs/saturate.png"></a>
                     <h1>saturator II</h1>
                     <h2>5.2022 <img src="/resources/icons/cu.png"></h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element school">
                     <a href="/engineering/theremin/"><img src="imgs/theremin.jpg"></a>
                     <h1>theremin</h1>
                     <h2>12.2021 <img src="/resources/icons/cu.png"></h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/uart/"><img src="imgs/uart.jpg"></a>
                     <h1>uart</h1>
                     <h2>11.2021</h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element school">
                     <a href="/engineering/rat/"><img src="imgs/rat.jpg"></a>
                     <h1>rat</h1>
                     <h2>12.2019 <img src="/resources/icons/cu.png"></h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element school">
                     <a href="/engineering/dld/"><img src="imgs/dld.jpg"></a>
                     <h1>digital logic design</h1>
                     <h2>12.2019 <img src="/resources/icons/cu.png"></h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/quadcopter/"><img src="imgs/quadcopter.jpg"></a>
                     <h1>quadcopter</h1>
                     <h2>8.2017</h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/macropad2/"><img src="imgs/mp2.jpg"></a>
                     <h1>macropad v2</h1>
                     <h2>8.2016</h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/macropad1/"><img src="imgs/mp1.jpg"></a>
                     <h1>macropad v1</h1>
                     <h2>2.2016</h2>
                 </div>
-                <div class="flex-element">
+                <div class="flex-element personal">
                     <a href="/engineering/odo/"><img src="imgs/odo.jpg"></a>
                     <h1>optical data overlay</h1>
                     <h2>2.2015</h2>
@@ -115,7 +125,7 @@
             </div>
 
             <div class="footer">
-                <p>&copy; 2015 - 2022<a class="alignright" href="#top">^ back to top</a></p>
+                <p>&copy; 2015 - <script>document.write( new Date().getFullYear() );</script><a class="alignright" href="#top">^ back to top</a></p>
             </div>
 
         </div>
