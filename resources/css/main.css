@@ -84,7 +84,7 @@ p,a,i {
 
 .spec-tent {
     margin-top: 40px;
-    background-color: aliceblue;
+    background-color: rgb(235, 245, 255);
     display: flex;
     border-bottom: 1px solid lightskyblue;
 }
