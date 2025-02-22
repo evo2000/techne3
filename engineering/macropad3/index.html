@@ -1,0 +1,70 @@
+<!doctype html>
+
+<!--
+
+   __            __                            ___          
+  / /____  _____/ /_  ____  ___   ____  ____  / (_)___  ___ 
+ / __/ _ \/ ___/ __ \/ __ \/ _ \ / __ \/ __ \/ / / __ \/ _ \
+/ /_/  __/ /__/ / / / / / /  __// /_/ / / / / / / / / /  __/
+\__/\___/\___/_/ /_/_/ /_/\___(_)____/_/ /_/_/_/_/ /_/\___/ 
+
+-->
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <title>techne.</title>
+        <script src="/resources/processing/processing.js"></script>
+        <link rel="stylesheet" href="/resources/css/main.css">
+        <link rel="stylesheet" href="/resources/css/dropdown.css">
+        <link rel="icon" type="image/png" href="/resources/icons/fav32.png">
+        <link href="/resources/lightbox2/lightbox.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <div class="main-contain">
+
+            <a name="top"></a>
+
+            <div class="title-bar">
+                <script type="text/processing" src="/resources/processing/proc_point.pde"></script>
+                <canvas></canvas>
+                <h1>techne.</h1>
+            </div>
+
+            <div class="navbar">
+                <a href="/about/">about</a>
+                <a href="/engineering">engineering</a>
+            </div>
+
+            <div class="title">
+                <h1>macropad v3</h1>
+                <h2>11.2021 - present</h2>
+            </div>
+
+            <div class="tent">
+                <div class="flex-photos">
+                    <a href="mp3-desk-rectcrop.jpg" data-lightbox="mp3" data-title=""><img src="mp3-desk-rectcrop.jpg"></a>
+                    <a href="mp3-1.jpg" data-lightbox="mp3" data-title=""><img src="mp3-1.jpg"></a>
+                    <a href="mp3-2.jpg" data-lightbox="mp3" data-title=""><img src="mp3-2.jpg"></a>
+                    <h4>Click on images to enlarge.</h4>
+                    <a href="mp3-3.jpg" data-lightbox="mp3" data-title=""><img src="mp3-3.jpg"></a>
+                    <a href="mp3-4.jpg" data-lightbox="mp3" data-title=""><img src="mp3-4.jpg"></a>
+                </div>
+
+                <p>The Macropad is a USB keypad which has small OLED displays in each of the key-caps. The displays enable each key's legend to change based on user selection, or application context. The small 3x3 format was envisioned as an addition to a keyboard - to provide access to macros or application functions, without the need to remember key-binds. The concept could be applied to full-sized keyboards too, where powerful new functionality would be possible, such as support  for multiple alphabets in general use.</p>
+                <p>The third version of the Macropad is based on Atmel's ATmega32U4 microcontroller, which was mostly selected for it's native USB HID support. The 32U4 sends USB keystroke packets to a connected computer, and manages the images displayed on the screens through a multiplexed SPI bus. Notable improvements over the second version include a new two-board design, a more reliable display/switch mechanism, increased flash storage for bitmap images, low-profile mechanical switches, and new (nicer) OLED displays.</p>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2015 - <script>document.write( new Date().getFullYear() );</script><a class="alignright" href="#top">^ back to top</a></p>
+            </div>
+
+        </div>
+        
+        <script src="/resources/lightbox2/lightbox-plus-jquery.js"></script>
+    </body>
+    
+</html>
