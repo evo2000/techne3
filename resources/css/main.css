@@ -15,7 +15,7 @@ p,a,i,ul,li {
 
 .title-bar {
     height: 160px;
-    margin-top: 20px;
+    margin-top: 40px;
     position: relative;
 }
 
@@ -37,59 +37,7 @@ p,a,i,ul,li {
 .title-bar h1::after {
     content: "";
     display: inline-block;
-    height:30px;
-}
-
-.title {
-    color: grey;
-    margin-top: 20px;
-}
-
-.spec-title h1 {
-    margin-top: 0px;
-    font-size: 20px;
-    color: lightskyblue;
-    position: absolute;
-}
-
-.spec-title h1::after {
-    content: "";
-    display: inline-block;
-    height: 40px;
-}
-
-.spec-tent {
-    margin-top: 40px;
-    background-color: rgb(235, 245, 255);
-    display: flex;
-    border-bottom: 1px solid lightskyblue;
-}
-
-.spec-tent a {
-    margin: 20px;
-}
-
-.spec-tent img {
-    width: 180px;
-}
-
-.spec-tent p {
-    padding: 20px 20px 20px 0px;
-}
-
-.title {
-    border-bottom: 1px solid lightgray;
-}
-
-.title h1 {
-    font-size: 16px;
-    color: red;
-}
-
-.title h2 {
-    font-size: 16px;
-    color: lightgray;
-    padding-top: 4px;
+    height: 30px;
 }
 
 .navbar a, .footer p, .footer a {
@@ -116,35 +64,6 @@ p,a,i,ul,li {
     color: yellowgreen;
 }
 
-.filtertitle h1{
-    color: yellowgreen;
-}
-
-.filterbar {
-    background-color: honeydew;
-    color: yellowgreen;
-    margin-top: 20px;
-    padding: 10px;
-    border-bottom: 1px solid yellowgreen;
-}
-
-.filterbar h3 {
-    padding-bottom: 10px;
-}
-
-.filter-button {
-    background-color: honeydew;
-    color: yellowgreen;
-    padding: 2px;
-    border: 1px solid yellowgreen;
-    border-radius: 3px;
-}
-
-.filter-button:hover {
-    background-color: yellowgreen;
-    color: honeydew;
-}
-
 .spec-title h1 {
     margin-top: 0px;
     font-size: 20px;
@@ -159,22 +78,67 @@ p,a,i,ul,li {
 
 .spec-tent {
     margin-top: 40px;
-}
-
-.spec-tent a {
-    margin: 20px;
+    display: flex;
+    padding: 10px;
 }
 
 .spec-tent img {
     width: 180px;
+    padding: 10px;
 }
 
 .spec-tent p {
-    padding: 20px 20px 20px 0px;
+    padding: 10px;
 }
 
-.tent {
-    margin-bottom: 40px;
+.feat-title {
+    color: dodgerblue;
+}
+
+.feat-tent {
+    color: dodgerblue;
+    background-color: aliceblue;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.filter-title {
+    color: yellowgreen;
+}
+
+.filter-tent {
+    background-color: honeydew;
+    color: yellowgreen;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.filter-button {
+    background-color: honeydew;
+    color: yellowgreen;
+    padding: 2px;
+    border: 1px solid yellowgreen;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+.filter-button:hover {
+    background-color: yellowgreen;
+    color: honeydew;
+}
+
+.title {
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.title h1 {
+    font-size: 16px;
+    color: red;
+}
+
+.title h2 {
+    font-size: 16px;
+    color: lightgray;
+    padding-top: 4px;
 }
 
 .flex-photos {
@@ -207,6 +171,7 @@ p,a,i,ul,li {
 
 .tent p {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .tent ul {
