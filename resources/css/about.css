@@ -1,40 +1,55 @@
 .def {
-    border: 2px dotted midnightblue;
-    color: midnightblue;
-    margin-top: 20px;
-    padding: 10px;
+    border: 2px dotted orange;
+    color: orange;
+    width: 426px;
+    height: 146px;
+    float: right;
+    margin-bottom: 20px;
 }
 
 .def h2 {
+    padding: 14px 10px 0px 10px;
     font-size: 18px;
 }
 
 .def h3 {
     font-size: 16px;
     font-style: italic;
+    padding: 6px 10px 0px 10px;
 }
 
 .def p {
-    margin-top: 10px;
+    padding: 6px 10px 0px 10px;
 }
 
 .bio {
     margin-top: 20px;
-    height: 150px;
 }
 
 .bio img {
     float: left;
+    width: 150px;
 }
 
-.bio p {
-    margin-top: 0px;
+.bio-text {
     width: 430px;
     float: right;
 }
 
+.bio p {
+    margin-top: 0px;
+}
+
 .bio i {
     font-weight: bold;
+}
+
+.bio::after {
+    visibility: hidden;
+    display: block;
+    content: "";
+    clear: both;
+    height: 0;
 }
 
 .tent a {
