@@ -11,25 +11,33 @@ void setup(){
   for(int i = 0; i < 10; i++){
     pts[i][1] = random(height); //fill pts[] with random y values
   }
+
+  draw_point(400, 100);
 }
 
 void draw(){
+  if(mouseX != 0 || mouseY != 0) {
+    draw_point(mouseX, mouseY);
+  }
+}
+
+void draw_point(int x_in, int y_in) {
   background(211);
-  
+
   for(int i = 0; i < 10; i++){
     stroke(0);
     point(pts[i][0], pts[i][1]); //draw random points generated in pts[] in setup()
     stroke(0, 0);
     fill(255, 64);
     ellipse(pts[i][0], pts[i][1], 50, 50);
-    mag[i] = dist(pts[i][0], pts[i][1], mouseX, mouseY); //fill mag[] with distances from mouse to each point
+    mag[i] = dist(pts[i][0], pts[i][1], x_in, y_in); //fill mag[] with distances from mouse to each point
   }
   
   minmag = min(mag); //minmag = least distance in mag[]
   for(int i = 0; i < 10; i++){
     if(mag[i] == minmag){
       stroke(255, 0, 0);
-      line(pts[i][0], pts[i][1], mouseX, mouseY);
+      line(pts[i][0], pts[i][1], x_in, y_in);
       mag[i] = 2000; // set mag to higher than possible value, to nullify
     }
   }
@@ -38,7 +46,7 @@ void draw(){
   for(int i = 0; i < 10; i++){
     if(mag[i] == minmag){
       stroke(255, 0, 0);
-      line(pts[i][0], pts[i][1], mouseX, mouseY);
+      line(pts[i][0], pts[i][1], x_in, y_in);
       mag[i] = 2000; // set mag to higher than possible value, to nullify
     }
   }
@@ -47,15 +55,8 @@ void draw(){
   for(int i = 0; i < 10; i++){
     if(mag[i] == minmag){
       stroke(255, 0, 0);
-      line(pts[i][0], pts[i][1], mouseX, mouseY);
+      line(pts[i][0], pts[i][1], x_in, y_in);
       mag[i] = 2000; // set mag to higher than possible value, to nullify
     }
   }
-  
-  /*
-  stroke(0, 0);
-  rect(40, 120, 160, 40);
-  fill(128);
-  text("techne.", 44, 156);
-  */
 }
