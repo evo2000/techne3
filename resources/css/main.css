@@ -195,6 +195,10 @@ p,a,i,ul,li {
     color: dodgerblue;
 }
 
+.related-links i {
+    margin-right: 4px;
+}
+
 .footer {
     font-size: 14px;
     background-color: lemonchiffon;
