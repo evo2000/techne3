@@ -4,7 +4,7 @@
     font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
 
-p,a,i,ul,li {
+p,a,b,i,ul,li {
     font-family: 'FreeSerif', serif;
 }
 
@@ -24,6 +24,7 @@ p,a,i,ul,li {
     padding: 0px;
     display: block;
     position: absolute;
+    background-color: lightgrey;
 }
 
 .title-bar h1 {
@@ -193,6 +194,11 @@ p,a,i,ul,li {
 
 .tent a:visited {
     color: dodgerblue;
+}
+
+.related-links i {
+    margin-right: 4px;
+    margin-left: 4px;
 }
 
 .footer {

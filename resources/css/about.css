@@ -40,10 +40,6 @@
     margin-top: 0px;
 }
 
-.bio i {
-    font-weight: bold;
-}
-
 .bio::after {
     visibility: hidden;
     display: block;
