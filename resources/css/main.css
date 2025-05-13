@@ -25,6 +25,7 @@ p,a,b,i,ul,li {
     display: block;
     position: absolute;
     background-color: lightgrey;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .title-bar h1 {
