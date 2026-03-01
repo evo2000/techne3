@@ -64,3 +64,13 @@
 .note img {
     height: 1em;
 }
+
+.web-badge-corner {
+    padding-top: 10px;
+}
+
+.web-badge-corner img {
+    width: 80px;
+    height: 15px;
+    padding-right: 6px;
+}
