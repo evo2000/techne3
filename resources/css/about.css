@@ -65,14 +65,17 @@
     height: 1em;
 }
 
-.web-badge-corner {
+.badge-container {
     margin-top: 40px;
     padding-top: 20px;
     border-top: 2px dotted lightgrey;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px;
+    justify-content: space-between;
 }
 
-.web-badge-corner img {
+.badge-container img {
     width: 80px;
     height: 15px;
-    padding-right: 6px;
+    image-rendering: pixelated;
 }
