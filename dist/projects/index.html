@@ -28,11 +28,29 @@
 
         <div class="main-contain">
 
-            <?php include __DIR__ . '/header.php'; ?>
+            <header>
+    <div class="title-bar">
+        <script type="text/processing" src="/src/assets/processing/proc_point.pde"></script>
+        <canvas></canvas>
+        <h1>techne.</h1>
+    </div>
 
-            <?php echo $content ?>
+    <div class="navbar">
+        <a href="/about/">about</a>
+        <a href="/engineering/">engineering</a>
+    </div>
+</header>
 
-            <?php include __DIR__ . '/footer.php'; ?>
+            <main>
+    <h1>title</h1>
+    <div class="content">
+        <p>Home content</p>
+        <img src="imgs/test.jpg" width="300px">
+    </div>
+</main>
+            <div class="footer">
+    <p>&copy; 2015 - <script>document.write( new Date().getFullYear() );</script><a class="alignright" href="#top">^ back to top</a></p>
+</div>
 
         </div>
 

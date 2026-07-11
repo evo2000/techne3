@@ -1,0 +1,232 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
+}
+
+p,a,b,i,ul,li {
+    font-family: 'FreeSerif', serif;
+}
+
+.main-contain {
+    width: 600px;
+    margin: auto;
+}
+
+.title-bar {
+    height: 160px;
+    margin-top: 40px;
+    position: relative;
+}
+
+.title-bar canvas {
+    margin: 0px;
+    padding: 0px;
+    display: block;
+    position: absolute;
+    background-color: lightgrey;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.title-bar h1 {
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin-left: 40px;
+    margin-top: 130px;
+}
+
+.title-bar h1::after {
+    content: "";
+    display: inline-block;
+    height: 30px;
+}
+
+.navbar a, .footer p, .footer a {
+    font-family: 'FreeSans', Helvetica, Arial, sans-serif;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: lemonchiffon;
+    margin-top: 0px;
+    padding-top: 6px;
+    border-bottom: 1px solid goldenrod;
+}
+  
+.navbar a {
+    float: left;
+    color: goldenrod;
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 14px;
+}
+  
+.navbar a:hover {
+    color: yellowgreen;
+}
+
+.spec-title h1 {
+    margin-top: 0px;
+    font-size: 20px;
+    position: absolute;
+}
+
+.spec-title h1::after {
+    content: "";
+    display: inline-block;
+    height: 40px;
+}
+
+.spec-tent {
+    margin-top: 40px;
+    display: flex;
+    padding: 10px;
+}
+
+.spec-tent img {
+    width: 180px;
+    padding: 10px;
+}
+
+.spec-tent p {
+    padding: 10px;
+}
+
+.feat-title {
+    color: dodgerblue;
+}
+
+.feat-tent {
+    color: dodgerblue;
+    background-color: aliceblue;
+    border-bottom: 1px solid dodgerblue;
+}
+
+.filter-title {
+    color: yellowgreen;
+}
+
+.filter-tent {
+    background-color: honeydew;
+    color: yellowgreen;
+    border-bottom: 1px solid yellowgreen;
+}
+
+.filter-button {
+    background-color: honeydew;
+    color: yellowgreen;
+    padding: 2px;
+    border: 1px solid yellowgreen;
+    border-radius: 3px;
+    margin-right: 4px;
+}
+
+.filter-button:hover {
+    background-color: yellowgreen;
+    color: honeydew;
+}
+
+.title {
+    margin-top: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.title h1 {
+    font-size: 16px;
+    color: red;
+}
+
+.title h2 {
+    font-size: 16px;
+    color: lightgray;
+    padding-top: 4px;
+}
+
+.flex-photos {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid lightgray;
+}
+
+.flex-photos a {
+    margin: 0px 10px 10px 0px;
+}
+
+.flex-photos img {
+    border: 1px solid lightgray;
+    width: 166px;
+    vertical-align: middle;
+}
+
+.flex-photos h4 {
+    font-size: 14px;
+    color: lightgray;
+    font-style: italic;
+    width: 66px;
+}
+
+.noshow {
+    visibility: hidden;
+}
+
+.tent {
+    margin-bottom: 40px;
+}
+
+.tent p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.tent ul {
+    margin-left: 40px;
+}
+
+.tent a {
+    color: dodgerblue;
+    text-decoration: none;
+}
+
+.tent a:hover {
+    text-decoration: underline;
+}
+
+.tent a:visited {
+    color: dodgerblue;
+}
+
+.related-links i {
+    margin-right: 4px;
+    margin-left: 4px;
+}
+
+.footer {
+    font-size: 14px;
+    background-color: lemonchiffon;
+    color: goldenrod;
+    margin-bottom: 20px;
+    padding: 6px 10px 0px 10px;
+    height: initial;
+    border-bottom: 1px solid goldenrod;
+}
+
+.alignright {
+    float: right;
+}
+
+.footer a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: yellowgreen;
+    text-decoration: none;
+}
