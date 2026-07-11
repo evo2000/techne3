@@ -1,3 +1,10 @@
+<?php
+/**
+ * @var string $content
+ * @var string $title
+ */
+?>
+
 <!doctype html>
 
 <!--
