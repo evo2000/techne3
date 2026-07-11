@@ -1,7 +1,21 @@
 <?php
 
+// Dindent — disabled for now while testing basic functionality.
+// Uncomment to re-enable HTML formatting/indentation.
+// require __DIR__ . '/src/vendor/dindent/Exception/InvalidArgumentException.php';
+// require __DIR__ . '/src/vendor/dindent/Exception/RuntimeException.php';
+// require __DIR__ . '/src/vendor/dindent/Indenter.php';
+//
+// use Gajus\Dindent\Indenter;
+
 $pagesDir = __DIR__ . '/src/pages';
 $distDir  = __DIR__ . '/dist';
+
+// Function - Format/indent final HTML output using dindent
+// function formatHtml($html) {
+//     $indenter = new Indenter(['indentation_character' => '    ']);
+//     return $indenter->indent($html);
+// }
 
 // Function - Delete directory (clean build)
 function deleteDir($dir) {
@@ -94,16 +108,26 @@ foreach ($pages as $pagePath) {
     }
 
     // Load metadata
-    $meta  = require $pagePath . '/meta.php';
-    $title = $meta['title'] ?? '';
+    $meta   = require $pagePath . '/meta.php';
+
+    // Add meta variables here:
+    $layout = $meta['layout'] ?? 'default';
+    $title  = $meta['title'] ?? '';
+
+    $layoutFile = __DIR__ . '/src/layouts/' . $layout . '.php';
+
+    if (!file_exists($layoutFile)) {
+        throw new Exception("Layout '{$layout}' not found for page: {$pagePath}");
+    }
 
     // Load static page content
     $content = file_get_contents($pagePath . '/page.html');
 
     ob_start();
-    require __DIR__ . '/src/templates/layout.php';
+    require $layoutFile;
     $html = ob_get_clean();
 
+    // file_put_contents($outputDir . '/index.html', formatHtml($html));
     file_put_contents($outputDir . '/index.html', $html);
 
     copyAssets($pagePath, $outputDir);

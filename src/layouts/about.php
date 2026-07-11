@@ -28,11 +28,11 @@
 
         <div class="main-contain">
 
-            <?php include __DIR__ . '/header.php'; ?>
+            <?php include __DIR__ . '/../partials/header.php'; ?>
 
             <?php echo $content ?>
 
-            <?php include __DIR__ . '/footer.php'; ?>
+            <?php include __DIR__ . '/../partials/footer.php'; ?>
 
         </div>
 
