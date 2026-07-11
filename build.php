@@ -20,9 +20,17 @@ function deleteDir($dir) {
 // Function - Recursive asset copy (excluding PHP)
 function copyAssets($src, $dst) {
 
+    if (!is_dir($dst)) {
+        mkdir($dst, 0777, true);
+    }
+
+    // Page source files — never copy these into dist as assets
+    $excludedFiles = ['meta.php', 'page.html'];
+
     foreach (scandir($src) as $file) {
 
         if ($file === '.' || $file === '..') continue;
+        if (in_array($file, $excludedFiles, true)) continue;
 
         $sourcePath = $src . '/' . $file;
         $destPath   = $dst . '/' . $file;
@@ -46,22 +54,17 @@ function copyAssets($src, $dst) {
 
 // Function - Discover pages recursively
 function discoverPages($dir) {
-
     $pages = [];
 
     foreach (scandir($dir) as $file) {
-
         if ($file === '.' || $file === '..') continue;
 
         $fullPath = $dir . '/' . $file;
 
         if (is_dir($fullPath)) {
-
-            if (file_exists($fullPath . '/page.php')) {
+            if (file_exists($fullPath . '/meta.php')) {
                 $pages[] = $fullPath;
             }
-
-            // Recurse into subdirectories
             $pages = array_merge($pages, discoverPages($fullPath));
         }
     }
@@ -80,7 +83,6 @@ foreach ($pages as $pagePath) {
 
     $relativePath = str_replace($pagesDir, '', $pagePath);
 
-    // Special case: home folder -> root
     if ($relativePath === '/home') {
         $outputDir = $distDir;
     } else {
@@ -91,13 +93,12 @@ foreach ($pages as $pagePath) {
         mkdir($outputDir, 0777, true);
     }
 
-    $page = require $pagePath . '/page.php';
+    // Load metadata
+    $meta  = require $pagePath . '/meta.php';
+    $title = $meta['title'] ?? '';
 
-    $title = $page['title'] ?? '';
-
-    ob_start();
-    $page['render']();
-    $content = ob_get_clean();
+    // Load static page content
+    $content = file_get_contents($pagePath . '/page.html');
 
     ob_start();
     require __DIR__ . '/src/templates/layout.php';
@@ -109,5 +110,8 @@ foreach ($pages as $pagePath) {
 
     echo "Built: {$relativePath}\n";
 }
+
+// Copy assets dir
+copyAssets(__DIR__ . '/src/assets', $distDir . '/assets');
 
 echo "Build complete.\n";

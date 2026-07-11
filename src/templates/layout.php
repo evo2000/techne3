@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en-US">
 
-<head>
-    <meta charset="utf-8" name="viewport" content="width=device-width">
-    <title><?= $title ?></title>
-</head>
+    <head>
+        <meta charset="utf-8" name="viewport" content="width=device-width">
+        <title><?= $title ?></title>
+        <link rel="stylesheet" href="/dist/assets/main.css">
+    </head>
 
-<body>
+    <body>
 
-<?php include __DIR__ . '/header.php'; ?>
+        <?php include __DIR__ . '/header.php'; ?>
 
-<?php echo $content ?>
+        <?php echo $content ?>
 
-<?php include __DIR__ . '/footer.php'; ?>
+        <?php include __DIR__ . '/footer.php'; ?>
 
-</body>
+    </body>
 
 </html>
