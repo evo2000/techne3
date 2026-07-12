@@ -38,7 +38,6 @@ function copyAssets($src, $dst) {
         mkdir($dst, 0777, true);
     }
 
-    // Page source files — never copy these into dist as assets
     $excludedFiles = ['meta.php', 'page.html'];
 
     foreach (scandir($src) as $file) {
@@ -50,6 +49,11 @@ function copyAssets($src, $dst) {
         $destPath   = $dst . '/' . $file;
 
         if (is_dir($sourcePath)) {
+
+            // Skip subdirectories that are themselves pages
+            if (file_exists($sourcePath . '/meta.php')) {
+                continue;
+            }
 
             if (!is_dir($destPath)) {
                 mkdir($destPath, 0777, true);
