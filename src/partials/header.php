@@ -6,7 +6,7 @@
     </div>
 
     <div class="navbar">
-        <a href="/about">about</a>
-        <a href="/projects">projects</a>
+        <a href="/about/">about</a>
+        <a href="/projects/">projects</a>
     </div>
 </header>

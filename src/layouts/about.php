@@ -26,7 +26,6 @@
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="stylesheet" href="/assets/css/about.css">
         <link rel="stylesheet" href="/assets/css/flex-menu.css">
-        <link rel="stylesheet" href="/assets/css/dropdown.css">
         <link rel="icon" type="image/png" href="/assets/icons/fav32.png">
         <link href="/assets/lightbox2/lightbox.css" rel="stylesheet">
         <link href="/assets/famfamfam-silk/famfamfam-silk.css" rel="stylesheet">

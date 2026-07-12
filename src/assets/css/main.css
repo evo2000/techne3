@@ -42,7 +42,7 @@ p,a,b,i,ul,li {
     height: 30px;
 }
 
-.navbar a, .footer p, .footer a {
+.navbar a, footer p, footer a {
     font-family: 'FreeSans', Helvetica, Arial, sans-serif;
 }
 
@@ -202,7 +202,7 @@ p,a,b,i,ul,li {
     margin-left: 4px;
 }
 
-.footer {
+footer {
     font-size: 14px;
     background-color: lemonchiffon;
     color: goldenrod;
@@ -216,17 +216,17 @@ p,a,b,i,ul,li {
     float: right;
 }
 
-.footer a {
+footer a {
     color: goldenrod;
     text-decoration: none;
 }
 
-.footer a:visited {
+footer a:visited {
     color: goldenrod;
     text-decoration: none;
 }
 
-.footer a:hover {
+footer a:hover {
     color: yellowgreen;
     text-decoration: none;
 }
