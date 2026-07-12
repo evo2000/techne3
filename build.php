@@ -1,21 +1,20 @@
 <?php
 
 // Dindent — disabled for now while testing basic functionality.
-// Uncomment to re-enable HTML formatting/indentation.
-// require __DIR__ . '/src/vendor/dindent/Exception/InvalidArgumentException.php';
-// require __DIR__ . '/src/vendor/dindent/Exception/RuntimeException.php';
-// require __DIR__ . '/src/vendor/dindent/Indenter.php';
-//
-// use Gajus\Dindent\Indenter;
+require __DIR__ . '/src/assets/dindent/Exception/DindentException.php';
+require __DIR__ . '/src/assets/dindent/Exception/InvalidArgumentException.php';
+require __DIR__ . '/src/assets/dindent/Exception/RuntimeException.php';
+require __DIR__ . '/src/assets/dindent/Indenter.php';
+use Gajus\Dindent\Indenter;
 
 $pagesDir = __DIR__ . '/src/pages';
 $distDir  = __DIR__ . '/dist';
 
 // Function - Format/indent final HTML output using dindent
-// function formatHtml($html) {
-//     $indenter = new Indenter(['indentation_character' => '    ']);
-//     return $indenter->indent($html);
-// }
+function formatHtml($html) {
+    $indenter = new Indenter(['indentation_character' => '    ']);
+    return $indenter->indent($html);
+}
 
 // Function - Delete directory (clean build)
 function deleteDir($dir) {
@@ -131,8 +130,8 @@ foreach ($pages as $pagePath) {
     require $layoutFile;
     $html = ob_get_clean();
 
-    // file_put_contents($outputDir . '/index.html', formatHtml($html));
-    file_put_contents($outputDir . '/index.html', $html);
+    file_put_contents($outputDir . '/index.html', formatHtml($html));
+    //file_put_contents($outputDir . '/index.html', $html);
 
     copyAssets($pagePath, $outputDir);
 
