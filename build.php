@@ -149,10 +149,14 @@ if (is_dir($staticDir)) {
         if ($entry === '.' || $entry === '..') continue;
 
         $srcPath = $staticDir . '/' . $entry;
+        $destPath = $distDir . '/' . $entry;
 
         if (is_dir($srcPath)) {
-            copyAssets($srcPath, $distDir . '/' . $entry);
-            echo "Copied static: /{$entry}\n";
+            copyAssets($srcPath, $destPath);
+            echo "Copied static dir: /{$entry}\n";
+        } else {
+            copy($srcPath, $destPath);
+            echo "Copied static file: /{$entry}\n";
         }
     }
 }
