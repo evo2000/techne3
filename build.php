@@ -141,4 +141,20 @@ foreach ($pages as $pagePath) {
 // Copy assets dir
 copyAssets(__DIR__ . '/src/assets', $distDir . '/assets');
 
+// Pasthrough static content from /src/static to /dist/static
+$staticDir = __DIR__ . '/src/static';
+
+if (is_dir($staticDir)) {
+    foreach (scandir($staticDir) as $entry) {
+        if ($entry === '.' || $entry === '..') continue;
+
+        $srcPath = $staticDir . '/' . $entry;
+
+        if (is_dir($srcPath)) {
+            copyAssets($srcPath, $distDir . '/' . $entry);
+            echo "Copied static: /{$entry}\n";
+        }
+    }
+}
+
 echo "Build complete.\n";
