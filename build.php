@@ -153,10 +153,10 @@ if (is_dir($staticDir)) {
 
         if (is_dir($srcPath)) {
             copyAssets($srcPath, $destPath);
-            echo "Copied static dir: /{$entry}\n";
+            echo "Passthrough dir: /{$entry}\n";
         } else {
             copy($srcPath, $destPath);
-            echo "Copied static file: /{$entry}\n";
+            echo "Passthrough file: /{$entry}\n";
         }
     }
 }
