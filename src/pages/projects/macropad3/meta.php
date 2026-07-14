@@ -1,6 +1,6 @@
 <?php
 
 return [
-    'layout' => 'about',
+    'layout' => 'default',
     'title' => 'macropad v3',
 ];
