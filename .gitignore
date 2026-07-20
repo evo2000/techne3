@@ -1,2 +1,5 @@
 # for Mac
 *.DS_Store
+
+# distribution
+dist/*
