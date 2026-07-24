@@ -23,7 +23,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width = 680px">
-        <title>techne.</title>
+        <title>techne3</title>
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="stylesheet" href="/assets/css/about.css">
         <link rel="stylesheet" href="/assets/css/flex-menu.css">
