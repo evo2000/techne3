@@ -2,6 +2,7 @@
 /**
  * @var string $content
  * @var string $title
+ * @var string $section
  */
 ?>
 
@@ -35,7 +36,7 @@
 
         <div class="main-contain">
 
-            <?php include __DIR__ . '/../partials/header.php'; ?>
+            <?php include __DIR__ . '/../partials/header-' . $section . '.php'; ?>
 
             <?php echo $content ?>
 

@@ -6,7 +6,7 @@
     </div>
 
     <div class="navbar">
-        <a href="/about/">about</a>
+        <a href="/about/" class="navbar-active">about</a>
         <a href="/projects/">projects</a>
     </div>
 </header>

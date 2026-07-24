@@ -47,23 +47,37 @@ p,a,b,i,ul,li {
 }
 
 .navbar {
-    overflow: hidden;
     background-color: lemonchiffon;
     margin-top: 0px;
     padding-top: 6px;
     border-bottom: 1px solid goldenrod;
+    display: flex;
+    position: relative;
 }
-  
+
 .navbar a {
     float: left;
+    position: relative;
     color: goldenrod;
     text-decoration: none;
-    padding-left: 10px;
+    margin-left: 5px;
+    margin-bottom: -1px;
+    padding: 5px 8px 0px 8px;
     font-size: 14px;
 }
   
 .navbar a:hover {
     color: yellowgreen;
+}
+
+.navbar-active {
+    background-color: white;
+    border-top: 1px solid goldenrod;
+    border-right: 1px solid goldenrod;
+    border-left: 1px solid goldenrod;
+    border-bottom: 1px solid white;
+    border-radius: 5px 5px 0px 0px;
+    z-index: 1;
 }
 
 .spec-title h1 {

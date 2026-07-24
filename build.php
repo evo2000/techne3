@@ -119,6 +119,13 @@ foreach ($pages as $pagePath) {
 
     $layoutFile = __DIR__ . '/src/layouts/' . $layout . '.php';
 
+    // Derive section from the dir under src/pages
+    $relativeToPages = trim(str_replace($pagesDir, '', $pagePath), '/');
+    $section = explode('/', $relativeToPages)[0];
+
+    // Manual override, for exceptions
+    // $section = $meta['section'] ?? $section;
+
     if (!file_exists($layoutFile)) {
         throw new Exception("Layout '{$layout}' not found for page: {$pagePath}");
     }
