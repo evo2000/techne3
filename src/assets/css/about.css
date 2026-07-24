@@ -75,3 +75,19 @@
 .note img {
     height: 1em;
 }
+
+.badge-container {
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-bottom: -20px;
+    border-top: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: 80px 80px 80px 80px 80px;
+    justify-content: space-between;
+}
+
+.badge-container img {
+    width: 80px;
+    height: 15px;
+    image-rendering: pixelated;
+}
