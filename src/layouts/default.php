@@ -21,15 +21,16 @@
 <html lang="en-US">
 
     <head>
-        <meta charset="utf-8" name="viewport" content="width = 680px">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width = 680px">
         <title>techne.</title>
-        <script src="/assets/processing/processing.js"></script>
         <link rel="stylesheet" href="/assets/css/main.css">
         <link rel="stylesheet" href="/assets/css/about.css">
         <link rel="stylesheet" href="/assets/css/flex-menu.css">
         <link rel="icon" type="image/png" href="/assets/icons/favicon3.png">
         <link href="/assets/lightbox2/lightbox.css" rel="stylesheet">
         <link href="/assets/famfamfam-silk/famfamfam-silk.css" rel="stylesheet">
+        <script src="/assets/processing/processing.js"></script>
     </head>
 
     <body>

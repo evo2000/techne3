@@ -1,7 +1,6 @@
 <header>
     <div class="title-bar">
-        <script type="text/processing" src="/assets/processing/proc_point.pde"></script>
-        <canvas></canvas>
+        <canvas data-processing-sources="/assets/processing/proc_point.pde"></canvas>
         <h1>techne.</h1>
     </div>
 
