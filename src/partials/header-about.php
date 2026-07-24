@@ -1,7 +1,6 @@
 <header>
     <div class="title-bar">
-        <canvas data-processing-sources="/assets/processing/proc_point.pde"></canvas>
-        <h1>techne.</h1>
+        <canvas data-processing-sources="/assets/processing/proc_grid.pde"></canvas>
     </div>
 
     <div class="navbar">
